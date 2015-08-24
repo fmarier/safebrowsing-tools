@@ -4,8 +4,9 @@ import urllib.request
 
 clientId = 'navclient-auto-ffox'
 appVersion = '42.0a1'
+baseUrl = 'https://shavar.services.mozilla.com/'
 #baseUrl = 'https://tracking.services.mozilla.com/'
-baseUrl = 'https://tracking.stage.mozaws.net/'
+#baseUrl = 'https://tracking.stage.mozaws.net/'
 #baseUrl = 'https://safebrowsing.clients.google.com/safebrowsing/'
 
 listUrl = baseUrl + 'list?client=%s&appver=%s&pver=2.2' % (clientId, appVersion)

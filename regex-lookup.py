@@ -16,10 +16,20 @@ def print_hashes(url):
     while dot != -1:
         # Check the full URL
         if urlparts.query:
+            # Check with the fragment (not part of the spec)
+            if urlparts.fragment:
+                s = hostname + urlparts.path + '?' + urlparts.query + '#' + urlparts.fragment
+                print_hash(s)
+
             s = hostname + urlparts.path + '?' + urlparts.query
             print_hash(s)
 
-        # Check without the querystring
+        # Check with the fragment (not part of the spec)
+        if urlparts.fragment:
+            s = hostname + urlparts.path + '#' + urlparts.fragment
+            print_hash(s)
+
+        # Check without the query string
         s = hostname + urlparts.path
         print_hash(s)
 

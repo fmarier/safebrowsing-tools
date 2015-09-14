@@ -6,9 +6,9 @@ clientId = 'navclient-auto-ffox'
 appVersion = '42.0a1'
 
 baseUrl = 'https://shavar.services.mozilla.com/'
+#baseUrl = 'https://shavar.stage.mozaws.net/'
 #baseUrl = 'https://tracking.services.mozilla.com/'
 #baseUrl = 'https://tracking.stage.mozaws.net/'
-#baseUrl = 'http://ec2-52-27-164-163.us-west-2.compute.amazonaws.com/downloads'
 list = b'mozpub-track-digest256'
 
 #baseUrl = 'https://safebrowsing.clients.google.com/safebrowsing/'

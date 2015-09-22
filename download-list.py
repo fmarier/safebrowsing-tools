@@ -7,9 +7,7 @@ appVersion = '42.0a1'
 
 baseUrl = 'https://shavar.services.mozilla.com/'
 #baseUrl = 'https://shavar.stage.mozaws.net/'
-#baseUrl = 'https://tracking.services.mozilla.com/'
-#baseUrl = 'https://tracking.stage.mozaws.net/'
-list = b'mozpub-track-digest256'
+list = b'mozstd-track-digest256'
 
 #baseUrl = 'https://safebrowsing.clients.google.com/safebrowsing/'
 #list = b'googpub-phish-shavar'

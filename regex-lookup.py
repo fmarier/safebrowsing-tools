@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # https://developers.google.com/safe-browsing/developers_guide_v2#RegexLookup
 

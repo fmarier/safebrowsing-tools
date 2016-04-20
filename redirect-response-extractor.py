@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # Extract the contents of a Safe Browsing redirect response
 # and throw an exception in case of errors.

@@ -1,0 +1,4 @@
+*.pyc
+/download_file_types/__pycache__/
+/download_file_types/download_file_types.proto
+/download_file_types/download_file_types_pb2.py

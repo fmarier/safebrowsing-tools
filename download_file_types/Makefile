@@ -6,3 +6,4 @@ download_file_types.proto:
 
 clean:
 	rm -f download_file_types_pb2.py
+	rm -f download_file_types_pb2.pyc

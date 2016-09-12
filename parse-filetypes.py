@@ -35,18 +35,20 @@ def process_platform_settings(extension, ping, settings):
 
 def process_file_type(file_type):
     extension = file_type.extension
-    extensions.append(extension)
     if len(file_type.platform_settings) != 1:
         print "WARNING: %s (%d != 1 platform settings)"\
             % (extension, len(file_type.platform_settings))
-    if file_type.is_archive:
-        extension += "[a]"
 
     ping = "sampled"
     if file_type.ping_setting == pb2.DownloadFileType.NO_PING:
         ping = "no"
     elif file_type.ping_setting == pb2.DownloadFileType.FULL_PING:
         ping = "FULL"
+        # Chrome only submits FULL_PING extensions to the server
+        extensions.append(extension)
+
+    if file_type.is_archive:
+        extension += "[a]"
 
     for platform_setting in file_type.platform_settings:
         process_platform_settings(extension, ping, platform_setting)
